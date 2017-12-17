@@ -1,0 +1,11 @@
+<%include partials/header%>
+<div>
+    <%shops.forEach(function (shop) {%>
+
+    <h3><%=shop.obj.name%></h3>
+    <img src="<%=shop.obj.picture%>">
+    <button>like</button>
+    <button>dislike</button>
+    <%})%>
+</div>
+<%include partials/footer%>
